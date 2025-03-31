@@ -1,0 +1,211 @@
+/* Estilos Gerais */
+:root{
+    --highlight-color: rgba(255, 255, 255, 0.2);
+    --switch-bg-url: url(/img/moon-star.svg);
+    --stroke-color: rgba(255, 255, 255, 0.5);
+    --surface-color: rgba(255, 255, 255, 0.1);
+    --surface-color-hover: rgba(3, 0, 0, 0.308);
+    --bg-color: #333;
+    --prim-color: #d46060;
+    --prim-alt: #ddd;
+    --sec-color: #cdcaaf;
+}
+.light{
+    --highlight-color: rgba(0, 0, 0, 0.25);
+    --switch-bg-url: url(/img/sun.svg);
+    --stroke-color: rgba(0, 0, 0, 0.5);
+    --surface-color: rgba(0, 0, 0, 0.1);
+    --surface-color-hover: rgba(3, 0, 0, 0.308);
+    --bg-color: #fff;
+    --prim-color: #2e2e25;
+    --prim-alt: #2e2e25;
+    --sec-color: #555;
+}
+
+*{
+    color: var(--prim-color);
+}
+body{
+    background-color: var(--bg-color);
+}
+a, i{
+    transition: .5s;
+    text-decoration: none;
+}
+.secondary-color{
+    color: var(--sec-color);
+}
+.center-image{
+    background-size: cover;
+    background-position: center;
+}
+.btn{
+    text-decoration: none;
+    background-color: var(--prim-color);
+    color: #fff;
+    padding: 7px 18px;
+    border-radius: 0;
+    border-radius: 10px;
+}
+.btn:hover{
+    filter: brightness(0.8);
+    border-radius: 10px;
+}
+
+
+/*      Header      */
+#header{
+    text-align: center;
+    padding: 20px;
+    border-bottom: 1px solid #ccc;
+}
+
+#header p{
+    margin-bottom: 0;
+    color: var(--sec-color);
+}
+
+#logo-container{
+    display: flex;
+    justify-content: center;
+}
+
+#logo {
+    width: 60px;
+    margin-right: 15px;
+}
+
+/*      NavBar      */
+#navbar{
+    padding: 10px;
+    margin-right: 15px;
+}
+#navbar a{
+    width: 120px;
+    color: var(--sec-color);
+    text-align: center;
+}
+#navbar a:hover{
+    color: #c1b696;
+}
+
+/* switch */
+#switch {
+    position: relative;
+    width: 4rem;
+    margin: 0.5rem 5rem;
+  }
+  
+  #switch button {
+    position: absolute;
+    z-index: 1;
+    transform: translateY(-50%);
+    top: 50%;
+    left: 0;
+    cursor: pointer;
+    
+    width: 2.5rem;
+    height: 2.5rem;
+    background: white;
+    border: 0;
+    border-radius: 50%;
+    background-image: var(--switch-bg-url);
+    background-repeat: no-repeat;
+    background-position: center;
+    transition: all 0.3s;
+    
+    animation: slide-back 0.4s;
+    border: 1px var(--highlight-color) solid;
+  }
+  
+  #switch button:hover {
+    outline: 0.5rem solid var(--highlight-color);
+  }
+  
+  .light #switch button {
+    animation: slide-in 0.4s forwards;
+  }
+  
+  #switch span {
+    display: block;
+    width: 4rem;
+    height: 1.7rem;
+    background: var(--surface-color);
+    border: 1px solid var(--stroke-color);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    border-radius: 624.94rem;
+  }
+
+/*      Main Image      */
+.main-image{
+    height: 400px;
+    background-image: url(../img/c7.png);
+    margin-bottom: 30px;
+    position: relative;
+    border-radius: 25px;
+}
+.main-image-info{
+    background-color: var(--bg-color);
+    padding: 25px;
+    position: absolute;
+    left: 25px;
+    bottom: 25px;
+    border-radius: 20px;
+    border: 2px solid var(--prim-alt);
+}
+
+/*      Gallery      */
+
+#img-2{
+    background-image: url('../img/c6.png');
+}
+#img-3{
+    background-image: url('../img/c5.png');
+}
+#img-4{
+    background-image: url('../img/c4.png');
+}
+#img-5{
+    background-image: url('../img/c3.webp');
+}
+#img-6{
+    background-image: url('../img/c2.png');
+}
+#img-7{
+    background-image: url(/img/c1.webp);
+}
+#gallery-container h1{
+    text-align: center;
+}
+
+#gallery-container h1, #gallery-container .col-md-6, #gallery-container .col-xs-12{
+    margin-bottom: 50px;
+}
+
+.small-image-container{
+    height: 250px;
+    margin-bottom: 20px;
+    border-radius: 25px;
+}
+
+/*      Footer      */
+footer{
+    border-top: 1px solid #ccc;
+}
+footer i{
+    font-size: 20px;
+}
+#social-icons-container{
+    padding: 25px;
+}
+#social-icons-container div{
+    text-align: center;
+}
+footer p{
+    text-align: center;
+    margin: 20px;
+}
+a:hover i{
+    color: #c1b696;
+}

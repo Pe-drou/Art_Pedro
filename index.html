@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-br" class="light">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Fav icon -->
+  <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap ícones -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/styles.css">
+  <title>Galeria Art</title>
+</head>
+<body>
+
+  <!--------------- H E A D E R --------------->
+
+  <div class="container-fluid">
+    <header id="header" class="row">
+      <div class="logo-container">
+        <img src="img/logo.webp" alt="Art" id="logo">
+        <h1>Limbus Company</h1>
+      </div>
+      <p>Jogo gacha com história boa?!</p>
+    </header>
+    <nav id="navbar" class="container">
+      <div class="row justify-content-center">
+        <a href="#">Home</a>
+        <a href="#">História</a>
+        <a href="#">Modos extra</a>
+        <a href="#">Eventos</a>
+      </div>
+      <div id="switch" onclick="toggleMode()">
+        <button></button>
+        <span></span>
+      </div>
+    </nav>
+  </div>
+
+  <!--------------- M A I N   I M A G E  --------------->
+
+  <div class="container" id="main-image-container">
+    <div class="main-image center-image">
+
+      <div class="main-image-info">
+        <h2>O fim do sonho</h2>
+        <p class="secondary-color">Capítulo 7</p>
+        <a href="#" class="btn">Detalhes</a>
+      </div>
+    </div>
+  </div>
+
+  <!--------------- G A L L E R Y --------------->
+
+  <div class="container" id="gallery-container">
+    <div class="col-12">
+      <h1>Capítulos</h1>
+    </div>
+    <div class="row gx-md-5">
+      <div class="col-xs-12 col-md-6">
+        <div class="small-image-container center-image" id="img-2"></div>
+        <h3>O Coração Partido</h3>
+        <p class="secondary-color">Capítulo 6</p>
+        <a href="#" class="btn">Detalhes</a>
+      </div>
+      <div class="col-xs-12 col-md-6">
+        <div class="small-image-container center-image" id="img-3"></div>
+        <h3>O Definidor do mal</h3>
+        <p class="secondary-color">Capítulo 5</p>
+        <a href="#" class="btn">Detalhes</a>
+      </div>
+      <div class="col-xs-12 col-md-6">
+        <div class="small-image-container center-image" id="img-4"></div>
+        <h3>O Imudável</h3>
+        <p class="secondary-color">Capítulo 4</p>
+        <a href="#" class="btn">Detalhes</a>
+      </div>
+      <div class="col-xs-12 col-md-6">
+        <div class="small-image-container center-image" id="img-5"></div>
+        <h3>O Não-confrontante</h3>
+        <p class="secondary-color">Capítulo 3</p>
+        <a href="#" class="btn">Detalhes</a>
+      </div>
+      <div class="col-xs-12 col-md-6">
+        <div class="small-image-container center-image" id="img-6"></div>
+        <h3>O Desamável</h3>
+        <p class="secondary-color">Capítulo 2</p>
+        <a href="#" class="btn">Detalhes</a>
+      </div>
+      <div class="col-xs-12 col-md-6">
+        <div class="small-image-container center-image" id="img-7"></div>
+        <h3>O Diferente</h3>
+        <p class="secondary-color">Capítulo 1</p>
+        <a href="#" class="btn">Detalhes</a>
+      </div>
+    </div>
+    <footer class="container">
+      <p class="secondary-color">Nos encontre nas redes sociais ou jogue o jogo:</p>
+      <div class="row justify-content-center" id="soical-icons-container">
+        <div class="col-1">
+          <a href="#"><i class="bi bi-steam secondary-color"></i></a>
+        </div>
+        <div class="col-1">
+          <a href="#"><i class="bi bi-twitter secondary-color"></i></a>
+        </div>
+      </div>
+    </footer>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
